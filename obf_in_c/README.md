@@ -85,11 +85,3 @@ After starting the API, deploy the backend by following these steps:
    /ubuntu/WebXploitBackend> python launch.py
    ```
 
----
-
-### Notes
-
-- If both the API and backend are deployed on the **same server**, make sure to first launch the API, followed by the backend.
-- If the API is deployed on a **different server**, ensure that the backend configuration (`backend/WebXploitBackend/config/params.py`, line 42) points to the correct API server address before running the applications.
-
-This process ensures that both components (API and backend) are properly obfuscated and deployed, with the correct sequence of steps for launching the applications.
