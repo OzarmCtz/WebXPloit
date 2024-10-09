@@ -1,6 +1,8 @@
 # WebXPloit: Pentesting Tools
 
-**WebXPloit** is a collection of pentesting tools developed as a personal project for enjoyment and educational purposes in the field of cybersecurity. This project is designed to facilitate learning and experimentation with various security concepts and practices. 
+**WebXPloit** is a Python script designed to scrape the web for identifying misconfigurations in servers and websites. Developed in Python, this tool aims to enhance security by uncovering potential vulnerabilities related to improper server settings and website configurations.
+
+Please note that the tool is not yet open for contributions.
 
 ### Legal Disclaimer
 
