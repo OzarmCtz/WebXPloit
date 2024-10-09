@@ -1,0 +1,12 @@
+# Ignorer les fichiers spécifiques dans le répertoire data
+/data/domains.txt
+/data/ip_list_checked.txt
+/data/ip_list_generated.txt
+/data/ip_list_ranged_for_domain.txt
+/data/ip_list_ranged_for_ip.txt
+
+# Ignorer les fichiers spécifiques dans le répertoire config
+/config/.env
+
+# Ignorer le répertoire output
+/output/
