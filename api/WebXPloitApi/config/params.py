@@ -7,7 +7,7 @@ from typing import Final, List
 class ConfigApiConst:
     class GlobalApiConfig:
         # Application version and production date
-        VERSION: Final[str] = "1 01/2/2023"
+        VERSION: Final[str] = "4.2.3 01/2/2023"
         API_NBR: Final[str] = "1"
 
     class LaunchApiConfig:

@@ -10,3 +10,4 @@
 
 # Ignorer le répertoire output
 /output/
+/.venv

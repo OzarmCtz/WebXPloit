@@ -9,7 +9,7 @@ from typing import Final, List
 class ConfigConst:
     class GlobalConfig:
         # Application version and production date
-        VERSION: Final[str] = "1.0 in Prod 01/14/2023"
+        VERSION: Final[str] = "7.2.1 01/14/2023"
         SERVER_NBR: Final[str] = "1"
 
     class LaunchConfig:
@@ -17,7 +17,7 @@ class ConfigConst:
         IP: Final[bool] = True
 
         # Number of IP addresses to generate
-        NBR_IP_TO_GENERATE: Final[int] = 10
+        NBR_IP_TO_GENERATE: Final[int] = 5000
 
         # Enable to include domain list linked to the generated IPs for vulnerability scanning (requires proxies in backend/WebXPloitBackend/data/proxies; not recommended)
         DOMAIN: Final[bool] = False

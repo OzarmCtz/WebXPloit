@@ -5,3 +5,4 @@ pydantic==2.9.2
 tortoise-orm==0.17.2
 uvicorn==0.31.0
 cython
+git-dumper
