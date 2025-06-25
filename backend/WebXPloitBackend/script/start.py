@@ -16,11 +16,11 @@ class StartProcess:
         self.run_main_process()
 
     def run_main_process(self):
-        CleanDatabaseEnvironment().run()
-        IpUtilityGenerator.IPAddressGenerator().run()
-        IpUtilityChecker.IpAddressChecker().run()
-        IpAdressRanger.IpAdressRanger().run()
-        if ConfigConst.LaunchConfig.DOMAIN:
-            ReverseIpV1.ReverseIpV1().run()
+        # CleanDatabaseEnvironment().run()
+        # IpUtilityGenerator.IPAddressGenerator().run()
+        # IpUtilityChecker.IpAddressChecker().run()
+        # IpAdressRanger.IpAdressRanger().run()
+        # if ConfigConst.LaunchConfig.DOMAIN:
+        #     ReverseIpV1.ReverseIpV1().run()
         StartProcessVuln().run()
         RemoveDuplicatesLinesInResult()

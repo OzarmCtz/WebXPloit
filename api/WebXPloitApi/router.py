@@ -66,6 +66,10 @@ async def delete_url():
     return await URLManager.DbUrl.all().delete()
 
 
+@app.get("/health")
+async def healthcheck():
+    return {"status": "ok"}
+
 
 OnceMakeEnvironment()
-uvicorn.run(app, host="127.0.0.1", port=8000)
+# uvicorn.run(app, host="127.0.0.1", port=8000)

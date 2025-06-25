@@ -1,0 +1,50 @@
+
+services:
+  webxploit-api:
+    build:
+      context: ./api/WebXPloitApi
+      dockerfile: Dockerfile
+    container_name: webxploit-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
+    networks:
+      - webxploit-network
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: [ "uvicorn", "router:app", "--host", "0.0.0.0", "--port", "8000" ]
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 60s         # toutes les 60 secondes
+      timeout: 3s
+      retries: 3            # moins de spam
+      start_period: 10s     # temps d'attente avant la 1ʳᵉ vérif
+
+
+  webxploit-backend:
+    build:
+      context: ./backend/WebXPloitBackend
+      dockerfile: Dockerfile
+    container_name: webxploit-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - ENVIRONMENT=docker
+      - API_URL=http://webxploit-api:8000
+    volumes:
+      - ./backend/WebXPloitBackend/config:/app/config
+      - ./backend/WebXPloitBackend/logs:/app/logs
+      - ./output:/app/output
+      - ./data:/app/data
+    networks:
+      - webxploit-network
+    depends_on:
+      webxploit-api:
+        condition: service_healthy
+    entrypoint: [ "/app/entrypoint.sh" ]
+
+networks:
+  webxploit-network:
+    driver: bridge

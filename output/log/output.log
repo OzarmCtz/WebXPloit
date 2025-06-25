@@ -1,0 +1,28 @@
+2025-06-23 16:38:44,849 - output_logger - INFO - OnceMakeEnvironment : Started .
+2025-06-23 16:38:44,867 - output_logger - ERROR - OnceMakeEnvironment : An error occurred while creating file output/ip_blacklisted.txt: [Errno 13] Permission denied: 'output/ip_blacklisted.txt'
+2025-06-23 16:38:44,886 - output_logger - INFO - OnceMakeEnvironment : Finished .
+2025-06-23 16:38:45,202 - output_logger - INFO - StartProcessVuln : exploit 1 url Started ...
+2025-06-23 16:39:51,100 - output_logger - ERROR - An error occurred in the `run` method: module 'fastapi.concurrency' has no attribute 'futures'
+2025-06-23 16:39:51,101 - output_logger - INFO - RemoveDuplicatesLinesInResult : Started .
+2025-06-23 16:39:51,108 - output_logger - INFO - File alerady cleaned : data/ip_list_generated.txt
+2025-06-23 16:39:51,110 - output_logger - INFO - File alerady cleaned : data/ip_list_checked.txt
+2025-06-23 16:39:51,112 - output_logger - INFO - File alerady cleaned : data/proxies.txt
+2025-06-23 16:39:51,114 - output_logger - INFO - File alerady cleaned : data/ip_list_ranged_for_domain.txt
+2025-06-23 16:39:51,118 - output_logger - INFO - File alerady cleaned : data/ip_list_ranged_for_ip.txt
+2025-06-23 16:39:51,120 - output_logger - INFO - File alerady cleaned : data/domains.txt
+2025-06-23 16:39:51,125 - output_logger - INFO - File alerady cleaned : output/result/smtp.txt
+2025-06-23 16:39:51,128 - output_logger - INFO - File alerady cleaned : output/result/phpmyadmin.txt
+2025-06-23 16:39:51,132 - output_logger - INFO - File alerady cleaned : output/result/adminer.txt
+2025-06-23 16:39:51,135 - output_logger - INFO - File alerady cleaned : output/result/mysql.txt
+2025-06-23 16:39:51,138 - output_logger - INFO - File alerady cleaned : output/result/aws.txt
+2025-06-23 16:39:51,141 - output_logger - INFO - File alerady cleaned : output/result/mailgun.txt
+2025-06-23 16:39:51,142 - output_logger - ERROR - An error was occured when cleaned duplicates data in : output/ip_blacklisted.txt: [Errno 2] No such file or directory: 'output/ip_blacklisted.txt'
+2025-06-23 16:39:51,147 - output_logger - INFO - File alerady cleaned : output/result/hits.txt
+2025-06-23 16:39:51,150 - output_logger - INFO - File alerady cleaned : output/result/twilio.txt
+2025-06-23 16:39:51,152 - output_logger - INFO - File alerady cleaned : output/result/osint.txt
+2025-06-23 16:39:51,155 - output_logger - INFO - File alerady cleaned : output/result/cpanel.txt
+2025-06-23 16:39:51,158 - output_logger - INFO - File alerady cleaned : output/result/joomla.txt
+2025-06-23 16:39:51,160 - output_logger - INFO - File alerady cleaned : output/result/shodan_cve.txt
+2025-06-23 16:39:51,163 - output_logger - INFO - File alerady cleaned : output/result/shodan_port.txt
+2025-06-23 16:39:51,165 - output_logger - INFO - File alerady cleaned : output/log/tg_sending_failed.txt
+2025-06-23 16:39:51,165 - output_logger - INFO - RemoveDuplicatesLinesInResult : Finished .

@@ -1,0 +1,6 @@
+2025-06-23 16:38:39,332 - api_logger - DEBUG - URLManager Init
+2025-06-23 16:38:39,340 - api_logger - INFO - OnceMakeApiEnvironment: Started .
+2025-06-23 16:38:39,340 - api_logger - ERROR - OnceMakeApiEnvironment : An error occurred while creating directory ../result: [Errno 13] Permission denied: '../result'
+2025-06-23 16:38:39,340 - api_logger - ERROR - OnceMakeApiEnvironment : An error occurred while creating directory ../log: [Errno 13] Permission denied: '../log'
+2025-06-23 16:38:39,341 - api_logger - DEBUG - OnceMakeApiEnvironment : Directory already data
+2025-06-23 16:38:39,342 - api_logger - INFO - OnceMakeApiEnvironment : Finished .

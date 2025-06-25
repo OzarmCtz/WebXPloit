@@ -1,0 +1,2 @@
+2025-06-23 16:39:51,092 - vuln_logger - WARNING - CheckAwsKeyAndSes error occurred : An error occurred (InvalidClientTokenId) when calling the GetCallerIdentity operation: The security token included in the request is invalid. / with url : http://13.39.105.246/
+2025-06-23 16:39:51,099 - vuln_logger - INFO - http://13.39.105.246/ [SUCCESS]

@@ -17,7 +17,7 @@ class ConfigConst:
         IP: Final[bool] = True
 
         # Number of IP addresses to generate
-        NBR_IP_TO_GENERATE: Final[int] = 5000
+        NBR_IP_TO_GENERATE: Final[int] = 1000000
 
         # Enable to include domain list linked to the generated IPs for vulnerability scanning (requires proxies in backend/WebXPloitBackend/data/proxies; not recommended)
         DOMAIN: Final[bool] = False
@@ -38,7 +38,7 @@ class ConfigConst:
         # Address where WebXPloitApi is running (ensure it matches the information specified in api/WebXPloitApi/config class LaunchApiConfig) 
         # It is recommended to use a different server from WebXPloitBackend for better load distribution.
         API_PORT: Final[str] = "8000"
-        API_IP: Final[str] = "127.0.0.1"
+        API_IP: Final[str] = "webxploit-api" 
 
     class IpChecker:
         # Number of threads for validating generated IP addresses
@@ -70,11 +70,11 @@ class ConfigConst:
         # /!\DO NOT ENABLE /!\: Exploit is illegal. 
 
         # Joomla CVE DB (4.0.0 <= Joomla <= 4.2.7)
-        CVE_2023_23752: Final[bool] = False 
+        CVE_2023_23752: Final[bool] = True 
 
         # Enable additional vulnerability checks (not recommended)
-        CHK_BFR_VULN_ADDITONAL_TRAITEMENT: Final[bool] = False
-        CHK_CVE_SHODAN: Final[bool] = False
+        CHK_BFR_VULN_ADDITONAL_TRAITEMENT: Final[bool] = True
+        CHK_CVE_SHODAN: Final[bool] = True
 
     class SecretConfig:
         # Add Telegram keys in backend/WebXploitBackend/config/.env if API_TELEGRAM = True

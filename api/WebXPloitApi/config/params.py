@@ -61,8 +61,8 @@ class ConfigApiConst:
     def get_all_directory_paths() -> List[Path]:
         directory_paths = [
             # Uncomment the following lines to include specific directory paths.
-            # Path("../result"),
-            # Path("../log"),
-            # Path("./data"),
+            Path("../result"),
+            Path("../log"),
+            Path("./data"),
         ]
         return directory_paths
