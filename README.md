@@ -1,4 +1,3 @@
-![Screenshot 2024-10-11 144138](https://github.com/user-attachments/assets/9c2ce88a-ded1-4c89-b14a-3885f68c44ea)
 
 # WebXPloit: Pentesting Tools
 
